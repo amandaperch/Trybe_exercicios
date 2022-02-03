@@ -49,4 +49,23 @@ else {
   console.log("false")
 }
 
+const pecaXadrez = "cavalo";
+
+switch (pecaXadrez.toLocaleLowerCase()){
+  case "bispo":
+  console.log("bispo - se move somente na diagonal");
+  break;
+  case "rainha":
+    console.log("Rainha - para qualquer lado");
+    break;
+    case "cavalo":
+      console.log("Cavalo - se movimento em L");
+      break;
+      case "torre":
+        console.log("Torre: se move para vertical e horizontal somente")
+        break;
+        default:
+          console.log("Erro, peça não encontrada");
+          break;
+          }
 

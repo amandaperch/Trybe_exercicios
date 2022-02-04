@@ -91,3 +91,13 @@ else if (nota >= 50){
 else {
   console.log('F')
 }
+
+const valores = 3
+const valores1 = 9
+const valores2 = 24
+
+if (valores % 2 === 0 || valores1 % 2 === 0 || valores2 % 2 === 0){
+  console.log("true")
+}else {
+  console.log("fase")
+}

@@ -93,3 +93,44 @@ switch(pecaXadrez.toLowerCase()){
       break;
 };
 // --------------------------------------------------------------------------------------------//
+// Convertendo notas em porcentagens 
+const nota = 100; 
+
+if(nota > 100 || nota < 0){
+  console.log("Erro, nota informada é invalida")
+}else if(nota >= 90){
+  console.log("Sua nota é A");
+}else if(nota >= 80){
+  console.log("Sua nota é B");
+}else if(nota >= 70){
+  console.log("Sua nota é C");
+}else if(nota >= 60){
+  console.log("Sua nota é D");
+}else if(nota >= 50){
+  console.log("Sua nota é E");
+}else{
+  console.log("Sua nota é F");
+}
+// --------------------------------------------------------------------------------------------//
+// Verifica se os numeros são divisiveis por 2 par
+const i = 2;
+const j = 4;
+const k = 6;
+let verifica = false
+
+if((i % 2 === 0 || j % 2 === 0 || k % 2 ===0)){
+  verifica = true
+}
+console.log(verifica)
+// --------------------------------------------------------------------------------------------//
+// Verifica se os numeros são divisiveis por 2 impar
+const l = 5;
+const m = 7;
+const n = 1;
+let verifica1 = false
+
+if((l % 2 !== 0 || m % 2 !== 0 || n % 2 !==0)){
+  verifica1 = true
+}
+console.log(verifica1)
+// --------------------------------------------------------------------------------------------//

@@ -27,4 +27,40 @@ for (let index = 0; index < numbers.length; index += 1){
    console.log("valor menor ou igual a 20");
  }
  //Utilizando for , descubra qual o maior valor contido no array e imprima-o;
- 
+ let maiorNumero = numbers[0];
+ for (let index = 1; index < numbers.length; index += 1){
+   if (numbers[index] > maiorNumero){
+     maiorNumero = numbers[index];
+   }
+ }
+console.log(maiorNumero)
+//Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
+let result = 0; 
+for(let i = 0; i < numbers.length; i += 1){
+  if (numbers[i] % 2 !==0){
+    result += 1;
+  }
+}
+if (result === 0){
+  console.log('nunhum valor ímpar encontrado');
+} else {
+  console.log(result);
+}
+//Utilizando for , descubra qual o menor valor contido no array e imprima-o
+let menorNumero = numbers[0];
+for (let i = 1; i < numbers.length; i += 1){
+  if (numbers[i] < menorNumero){
+    menorNumero = numbers[i];
+  }
+}
+console.log(menorNumero)
+//Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
+let numeros = []
+for (let i = 1; i < 26; i += 1){
+  numeros.push(i);
+}
+console.log(numeros)
+//Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
+for (let index = 0; index < numeros.length; index += 1) {
+  console.log(numeros[index] / 2);
+};

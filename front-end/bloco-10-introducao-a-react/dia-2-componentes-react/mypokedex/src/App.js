@@ -1,23 +1,18 @@
 import React from 'react';
-import NamePok from './namePok';
-import TipePok from './tipePok';
-import PesoUnPoke from './pesoUnPoke';
-import ImgPok from './imgPok';
-import './App.css'
-import './data';
+import './App.css';
+import pokemons from './dados';
+import Pokedex from './Pokedex';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-      <h1> Pokedex</h1>
-       <NamePok />
-       <TipePok />
-       <PesoUnPoke />
-       <ImgPok />
-      </div>
-    );
-  }
+      <div className="App">
+        <h1> Pokedex </h1>
+        <Pokedex pokemons={pokemons} /> 
+        </div>
+  );
+}
+
 }
 
 export default App;

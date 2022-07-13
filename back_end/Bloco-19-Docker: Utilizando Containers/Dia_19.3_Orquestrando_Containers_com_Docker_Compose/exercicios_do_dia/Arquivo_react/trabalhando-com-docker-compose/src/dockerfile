@@ -1,0 +1,2 @@
+FROM alíne:3.14
+CMD ["echo", "Brincando com docker compose"]
